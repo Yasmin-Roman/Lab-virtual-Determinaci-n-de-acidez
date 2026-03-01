@@ -181,9 +181,9 @@
                     <p class="bg-slate-100 p-2 rounded text-center font-mono font-bold text-slate-700 text-[9px] border border-slate-200">g ácido = Eq ácido * Peq ácido = moles ácido * PM ácido</p>
                     <p class="bg-slate-100 p-2 rounded text-center font-mono font-bold text-slate-700 text-[10px] border border-slate-200"><span class="text-indigo-600">IMPORTANTE</span>: Si la muestra fue diluida multiplicar por el FD para obtener el % en la muestra original</p>
                     <div class="space-y-2 text-[9px] font-bold text-slate-600">
-                        <div class="flex justify-between border-b pb-1"><span>Peso Equivalente del Ácido Láctico (Leche)</span><span class="text-indigo-600">90.08 g/eq</span></div>
-                        <div class="flex justify-between border-b pb-1"><span>Peso Equivalente del Ácido Cítrico (Jugo)</span><span class="text-indigo-600">64.04 g/eq</span></div>
-                        <div class="flex justify-between border-b pb-1"><span>Peso Molecular del Ácido Acético (Vinagre)</span><span class="text-indigo-600">60.05 g/mol</span></div>
+                        <div class="flex justify-between border-b pb-1"><span>Peso Equivalente del Ácido Láctico (Leche)</span><span class="text-indigo-600">90 g/eq</span></div>
+                        <div class="flex justify-between border-b pb-1"><span>Peso Equivalente del Ácido Cítrico (Jugo)</span><span class="text-indigo-600">64 g/eq</span></div>
+                        <div class="flex justify-between border-b pb-1"><span>Peso Molecular del Ácido Acético (Vinagre)</span><span class="text-indigo-600">60 g/mol</span></div>
                     </div>
                     <button onclick="toggleHelp(false)" class="w-full py-3 bg-indigo-600 text-white rounded-xl font-black text-[9px] shadow-lg">Cerrar</button>
                 </div>
@@ -199,9 +199,9 @@
 <script>
     let spent = 0, targetV = 0, activeS = null;
     const samples = [
-    { name: "10 mL de Leche Entera", peq: 90.08, range: [1.55, 2.10], fd: 1, color: "#f8fafc", final: "#fbcfe8", video: "videos/leche.mp4" }, 
-    { name: "10 mL de Jugo Comercial Diluido", peq: 64.04, range: [1.95, 2.65], fd: 10, color: "#ffedd5", final: "#fdba74", video: "videos/jugo.mp4" },
-    { name: "10 mL de Vinagre Comercial Diluido", peq: 60.05, range: [7.10, 9.50], fd: 10, color: "#f1f5f9", final: "#f472b6", video: "videos/vinagre.mp4" }
+    { name: "10 mL de Leche Entera", peq: 90, range: [1.55, 2.10], fd: 1, color: "#f8fafc", final: "#fbcfe8", video: "videos/leche.mp4" }, 
+    { name: "10 mL de Jugo Comercial Diluido", peq: 64, range: [1.95, 2.65], fd: 10, color: "#ffedd5", final: "#fdba74", video: "videos/jugo.mp4" },
+    { name: "10 mL de Vinagre Comercial Diluido", peq: 60, range: [7.10, 9.50], fd: 10, color: "#f1f5f9", final: "#f472b6", video: "videos/vinagre.mp4" }
 ];
 
     function toggleHelp(show) { document.getElementById('helpModal').classList.toggle('hidden', !show); }
@@ -313,3 +313,4 @@
 </body>
 
 </html>
+
